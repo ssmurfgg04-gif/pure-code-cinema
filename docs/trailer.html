@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ONCE UPON A TUESDAY — a trailer made of p5.js</title>
+<style>
+  html,body{margin:0;padding:0;background:#050507;height:100%;overflow:hidden;
+    display:flex;align-items:center;justify-content:center;font-family:monospace}
+  #stage{width:min(100vw,177.78vh);aspect-ratio:16/9;position:relative}
+  canvas{width:100% !important;height:100% !important;display:block;
+    image-rendering:auto;box-shadow:0 0 120px rgba(40,40,80,.35)}
+</style>
+<!-- p5.js 1.4.2 — local copy first, CDN fallback if it is missing -->
+<script src="p5.min.js"
+        onerror="var s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.min.js';document.head.appendChild(s)"></script>
+<script src="sketch.js"></script>
+</head>
+<body><div id="stage"></div></body>
+</html>
